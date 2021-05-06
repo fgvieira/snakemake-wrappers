@@ -13,5 +13,5 @@ log = snakemake.log_fmt_shell(stdout=True, stderr=True, append=True)
 
 
 shell(
-    "samtools view {snakemake.params.extra} {samtools_opts} -o {snakemake.output[0]} {snakemake.input[0]} {log}"
+    "samtools view {snakemake.params.extra} {samtools_opts} {snakemake.input[0]} {log}"
 )
