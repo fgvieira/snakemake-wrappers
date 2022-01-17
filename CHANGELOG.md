@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.86.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v0.85.1...v0.86.0) (2022-01-17)
+
+
+### Features
+
+* add fasttree wrapper ([#405](https://www.github.com/fgvieira/snakemake-wrappers/issues/405)) ([ad99f9e](https://www.github.com/fgvieira/snakemake-wrappers/commit/ad99f9ef63a4e80b51860f71287d4396b055a9da))
+* add MUSCLE wrapper ([#404](https://www.github.com/fgvieira/snakemake-wrappers/issues/404)) ([564ada7](https://www.github.com/fgvieira/snakemake-wrappers/commit/564ada7de5a4beb124ee5be16b80f0d5a53d51e0))
+* update multiqc wrapper to v1.11 ([#422](https://www.github.com/fgvieira/snakemake-wrappers/issues/422)) ([0fa22a3](https://www.github.com/fgvieira/snakemake-wrappers/commit/0fa22a3b8a4c8355fd103b85eb1fecfb1e0c4bc0))
+
+
+### Bug Fixes
+
+* log file handling and other small improvements for bcftools wrappers ([#429](https://www.github.com/fgvieira/snakemake-wrappers/issues/429)) ([961edb8](https://www.github.com/fgvieira/snakemake-wrappers/commit/961edb8cfe7b224b2ddb6344caf5293a0938d003))
+* proper tempfile handling for STAR and improved documentation ([#430](https://www.github.com/fgvieira/snakemake-wrappers/issues/430)) ([922cf87](https://www.github.com/fgvieira/snakemake-wrappers/commit/922cf87856e61f6cbf408d2c31c83723dfe67f5b))
+
 ### [0.85.1](https://www.github.com/snakemake/snakemake-wrappers/compare/v0.85.0...v0.85.1) (2022-01-14)
 
 
