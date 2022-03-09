@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.2.1](https://www.github.com/fgvieira/snakemake-wrappers/compare/v1.2.0...v1.2.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* bcftools filter cannot run with mem options and this will prevent mem-max to be set. ([#464](https://www.github.com/fgvieira/snakemake-wrappers/issues/464)) ([d7a0de4](https://www.github.com/fgvieira/snakemake-wrappers/commit/d7a0de4a2b0cd36d9b141f9e9b717f98a4979ea6))
+* update multiqc version to 1.12 ([#460](https://www.github.com/fgvieira/snakemake-wrappers/issues/460)) ([330359d](https://www.github.com/fgvieira/snakemake-wrappers/commit/330359d40a98f8efedc6e55fbd963d02a1e14fad))
+
 ## [1.2.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v1.1.0...v1.2.0) (2022-02-21)
 
 
