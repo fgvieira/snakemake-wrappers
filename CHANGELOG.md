@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v1.9.0...v1.10.0) (2022-08-19)
+
+
+### Features
+
+* Delly automated conversion of output file ([#468](https://www.github.com/fgvieira/snakemake-wrappers/issues/468)) ([67c11a3](https://www.github.com/fgvieira/snakemake-wrappers/commit/67c11a33842e199d34d8ed1639696d7213019dbc))
+
 ## [1.9.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v1.8.0...v1.9.0) (2022-08-18)
 
 
