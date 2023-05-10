@@ -1,5 +1,24 @@
 # Changelog
 
+### [1.29.1](https://www.github.com/fgvieira/snakemake-wrappers/compare/v1.29.0...v1.29.1) (2023-05-10)
+
+
+### Performance Improvements
+
+* autobump bio/bismark/bam2nuc ([#1341](https://www.github.com/fgvieira/snakemake-wrappers/issues/1341)) ([ce2b39e](https://www.github.com/fgvieira/snakemake-wrappers/commit/ce2b39e65752a5088088c65d67abe3fa4d01a0dc))
+* autobump bio/bismark/bismark2report ([#1334](https://www.github.com/fgvieira/snakemake-wrappers/issues/1334)) ([d497124](https://www.github.com/fgvieira/snakemake-wrappers/commit/d497124a689d436169dd360e674bd7af7bfc7fa9))
+* autobump bio/bwa/samxe ([#1335](https://www.github.com/fgvieira/snakemake-wrappers/issues/1335)) ([8042216](https://www.github.com/fgvieira/snakemake-wrappers/commit/80422161ea03b1d8a1f513f7562b7cbe6667a952))
+* autobump bio/gatk/applybqsr ([#1339](https://www.github.com/fgvieira/snakemake-wrappers/issues/1339)) ([ec62a41](https://www.github.com/fgvieira/snakemake-wrappers/commit/ec62a41f3ece28922bc9a35edec5c44997006320))
+* autobump bio/gatk/variantfiltration ([#1340](https://www.github.com/fgvieira/snakemake-wrappers/issues/1340)) ([d108c9c](https://www.github.com/fgvieira/snakemake-wrappers/commit/d108c9c0adc28b8b7bac14b418f1f79df91a90a5))
+* autobump bio/manta ([#1342](https://www.github.com/fgvieira/snakemake-wrappers/issues/1342)) ([a23858a](https://www.github.com/fgvieira/snakemake-wrappers/commit/a23858aa5e6980e559ee8cb02f0a54208af9eef5))
+* autobump bio/minimap2/aligner ([#1329](https://www.github.com/fgvieira/snakemake-wrappers/issues/1329)) ([45c53eb](https://www.github.com/fgvieira/snakemake-wrappers/commit/45c53eba9041a28745c2d678638827b0b2537667))
+* autobump bio/open-cravat/run ([#1330](https://www.github.com/fgvieira/snakemake-wrappers/issues/1330)) ([fc82508](https://www.github.com/fgvieira/snakemake-wrappers/commit/fc82508898e6de6c5f673f1a3044bda7fe02d656))
+* autobump bio/picard/addorreplacereadgroups ([#1333](https://www.github.com/fgvieira/snakemake-wrappers/issues/1333)) ([d273596](https://www.github.com/fgvieira/snakemake-wrappers/commit/d27359682dbe2a4c411971e09c72079a9d803dfb))
+* autobump bio/seqkit/fx2tab ([#1338](https://www.github.com/fgvieira/snakemake-wrappers/issues/1338)) ([53922ca](https://www.github.com/fgvieira/snakemake-wrappers/commit/53922ca8c2a7ad2da5c17a39fb98e724dff56df5))
+* autobump bio/tabix/index ([#1336](https://www.github.com/fgvieira/snakemake-wrappers/issues/1336)) ([dfab9c6](https://www.github.com/fgvieira/snakemake-wrappers/commit/dfab9c6aa5e50596d7348553d8414c534130f5f8))
+* autobump bio/vembrane/table ([#1337](https://www.github.com/fgvieira/snakemake-wrappers/issues/1337)) ([953c0dc](https://www.github.com/fgvieira/snakemake-wrappers/commit/953c0dcdedc8ebbaff96e139c93d5c2aef3ad87f))
+* autobump bio/vg/sim ([#1332](https://www.github.com/fgvieira/snakemake-wrappers/issues/1332)) ([91574fd](https://www.github.com/fgvieira/snakemake-wrappers/commit/91574fd8795d55ff9e60b35f884c4f2cd7956b54))
+
 ## [1.29.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v1.28.0...v1.29.0) (2023-05-04)
 
 
