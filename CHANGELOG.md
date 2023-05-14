@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.31.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v1.30.0...v1.31.0) (2023-05-14)
+
+
+### Features
+
+* add nonpareil wrapper ([#1294](https://www.github.com/fgvieira/snakemake-wrappers/issues/1294)) ([53318ed](https://www.github.com/fgvieira/snakemake-wrappers/commit/53318edadc897c57d72375ba426dbdf9b456fe92))
+
 ## [1.30.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v1.29.0...v1.30.0) (2023-05-12)
 
 
