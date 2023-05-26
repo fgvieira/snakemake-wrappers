@@ -1,5 +1,39 @@
 # Changelog
 
+### [1.31.2](https://www.github.com/fgvieira/snakemake-wrappers/compare/v1.31.1...v1.31.2) (2023-05-26)
+
+
+### Bug Fixes
+
+* indexed bam files can now be put as input ([#1378](https://www.github.com/fgvieira/snakemake-wrappers/issues/1378)) ([7c53b89](https://www.github.com/fgvieira/snakemake-wrappers/commit/7c53b89cd6b70b4675f4ee82fd55982f4cfa51b1))
+
+
+### Performance Improvements
+
+* autobump bio/bcftools/filter ([#1383](https://www.github.com/fgvieira/snakemake-wrappers/issues/1383)) ([dab7630](https://www.github.com/fgvieira/snakemake-wrappers/commit/dab7630075ae834c61918dc4ee5cb302022bc8ed))
+* autobump bio/bcftools/view ([#1394](https://www.github.com/fgvieira/snakemake-wrappers/issues/1394)) ([8a8d877](https://www.github.com/fgvieira/snakemake-wrappers/commit/8a8d877c51dce3c2a966f1ff884728d0333a49fd))
+* autobump bio/bedtools/complement ([#1392](https://www.github.com/fgvieira/snakemake-wrappers/issues/1392)) ([7284ac2](https://www.github.com/fgvieira/snakemake-wrappers/commit/7284ac2b1c38678db067c5c04fce590fdd9a85c9))
+* autobump bio/bwa-mem2/mem ([#1389](https://www.github.com/fgvieira/snakemake-wrappers/issues/1389)) ([9a5828c](https://www.github.com/fgvieira/snakemake-wrappers/commit/9a5828cae18fe542e41b42796e9da03d50fbd8a6))
+* autobump bio/deeptools/computematrix ([#1373](https://www.github.com/fgvieira/snakemake-wrappers/issues/1373)) ([6f3e9b5](https://www.github.com/fgvieira/snakemake-wrappers/commit/6f3e9b5eedd5019ea36e840e7cc7101dbdc77639))
+* autobump bio/deseq2/deseqdataset ([#1369](https://www.github.com/fgvieira/snakemake-wrappers/issues/1369)) ([8ca67e8](https://www.github.com/fgvieira/snakemake-wrappers/commit/8ca67e82ebb92e18dce5baf153f72b3e77bad7c6))
+* autobump bio/fastq_screen ([#1375](https://www.github.com/fgvieira/snakemake-wrappers/issues/1375)) ([abb82c4](https://www.github.com/fgvieira/snakemake-wrappers/commit/abb82c4a98be3c71e17de50670d19579f63901ec))
+* autobump bio/gatk/scatterintervalsbyns ([#1387](https://www.github.com/fgvieira/snakemake-wrappers/issues/1387)) ([61944c3](https://www.github.com/fgvieira/snakemake-wrappers/commit/61944c37e94c2ef80228f3310ef7e64fe3ab0f5e))
+* autobump bio/gatk/selectvariants ([#1376](https://www.github.com/fgvieira/snakemake-wrappers/issues/1376)) ([e2962a1](https://www.github.com/fgvieira/snakemake-wrappers/commit/e2962a14ccff2e339f5d137c729b1d5607b9e666))
+* autobump bio/gatk/variantrecalibrator ([#1374](https://www.github.com/fgvieira/snakemake-wrappers/issues/1374)) ([341ccaa](https://www.github.com/fgvieira/snakemake-wrappers/commit/341ccaac9e9343774c57477e8d6fede514b7c8eb))
+* autobump bio/gatk3/indelrealigner ([#1371](https://www.github.com/fgvieira/snakemake-wrappers/issues/1371)) ([6ef06a1](https://www.github.com/fgvieira/snakemake-wrappers/commit/6ef06a1e8fa5cad5a69906061d3827c656e6843b))
+* autobump bio/hisat2/index ([#1370](https://www.github.com/fgvieira/snakemake-wrappers/issues/1370)) ([b5e37ab](https://www.github.com/fgvieira/snakemake-wrappers/commit/b5e37ab3ed8bd70ed969a444274a183fa9ff36f8))
+* autobump bio/paladin/index ([#1379](https://www.github.com/fgvieira/snakemake-wrappers/issues/1379)) ([598d8e7](https://www.github.com/fgvieira/snakemake-wrappers/commit/598d8e717261c02d663d99a0c81d44c8b9cfaac8))
+* autobump bio/picard/revertsam ([#1384](https://www.github.com/fgvieira/snakemake-wrappers/issues/1384)) ([007cbd1](https://www.github.com/fgvieira/snakemake-wrappers/commit/007cbd17a36ada11943908d6c02dc4b8fc74a226))
+* autobump bio/snpsift/annotate ([#1390](https://www.github.com/fgvieira/snakemake-wrappers/issues/1390)) ([f59bb6b](https://www.github.com/fgvieira/snakemake-wrappers/commit/f59bb6ba01e13333fc8693b9e55773814d37a0dc))
+* autobump bio/spades/metaspades ([#1385](https://www.github.com/fgvieira/snakemake-wrappers/issues/1385)) ([df5c0d1](https://www.github.com/fgvieira/snakemake-wrappers/commit/df5c0d18ce6a38a3db6206083414ee69fceeeecf))
+* autobump bio/sra-tools/fasterq-dump ([#1380](https://www.github.com/fgvieira/snakemake-wrappers/issues/1380)) ([8b007a5](https://www.github.com/fgvieira/snakemake-wrappers/commit/8b007a51a066cbba0f0a390a08fa8e5c60d8464c))
+* autobump bio/ucsc/faToTwoBit ([#1388](https://www.github.com/fgvieira/snakemake-wrappers/issues/1388)) ([8356b4f](https://www.github.com/fgvieira/snakemake-wrappers/commit/8356b4fe00cad3529484a821bc7582b6f5a88a51))
+* autobump bio/ucsc/gtfToGenePred ([#1391](https://www.github.com/fgvieira/snakemake-wrappers/issues/1391)) ([32aa42f](https://www.github.com/fgvieira/snakemake-wrappers/commit/32aa42f187351108aa7f6d2ca060c2446c16f9e6))
+* autobump bio/ucsc/twoBitToFa ([#1393](https://www.github.com/fgvieira/snakemake-wrappers/issues/1393)) ([ae1453a](https://www.github.com/fgvieira/snakemake-wrappers/commit/ae1453a323d11c7a4d5eee81031180f0db690e47))
+* autobump bio/vep/annotate ([#1386](https://www.github.com/fgvieira/snakemake-wrappers/issues/1386)) ([3365493](https://www.github.com/fgvieira/snakemake-wrappers/commit/3365493f7e2a93c55b700b9446ee5e73ab7c90cd))
+* autobump bio/vg/construct ([#1381](https://www.github.com/fgvieira/snakemake-wrappers/issues/1381)) ([0785aac](https://www.github.com/fgvieira/snakemake-wrappers/commit/0785aaca7e5ce77faadf3cfe49b23d6af551bf57))
+* autobump bio/vg/prune ([#1377](https://www.github.com/fgvieira/snakemake-wrappers/issues/1377)) ([7dc7890](https://www.github.com/fgvieira/snakemake-wrappers/commit/7dc7890769257d161731b2004401db4b6760bae6))
+
 ### [1.31.1](https://www.github.com/snakemake/snakemake-wrappers/compare/v1.31.0...v1.31.1) (2023-05-17)
 
 
