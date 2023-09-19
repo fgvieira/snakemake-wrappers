@@ -1,5 +1,37 @@
 # Changelog
 
+### [2.6.1](https://www.github.com/fgvieira/snakemake-wrappers/compare/v2.6.0...v2.6.1) (2023-09-19)
+
+
+### Bug Fixes
+
+* fix freebayes parallel ([#1807](https://www.github.com/fgvieira/snakemake-wrappers/issues/1807)) ([2aa2f62](https://www.github.com/fgvieira/snakemake-wrappers/commit/2aa2f62af06213d3060378b5600c10d5e79787fa))
+* genomepy wrapper ([#1795](https://www.github.com/fgvieira/snakemake-wrappers/issues/1795)) ([53231a0](https://www.github.com/fgvieira/snakemake-wrappers/commit/53231a0ef6b9e8045081456e2a129fccfb744f18))
+* gffread - properly generate fasta output ([#1797](https://www.github.com/fgvieira/snakemake-wrappers/issues/1797)) ([89ea854](https://www.github.com/fgvieira/snakemake-wrappers/commit/89ea854d1f2e26bed121650e3ae9f60a1ab84dec))
+
+
+### Performance Improvements
+
+* autobump bio/blast/makeblastdb ([#1786](https://www.github.com/fgvieira/snakemake-wrappers/issues/1786)) ([a5db830](https://www.github.com/fgvieira/snakemake-wrappers/commit/a5db830243346385601ab9c0851f221276df3342))
+* autobump bio/bwa-memx/mem ([#1802](https://www.github.com/fgvieira/snakemake-wrappers/issues/1802)) ([9ceb997](https://www.github.com/fgvieira/snakemake-wrappers/commit/9ceb9974e99677accdfdbca32e17c496f880a901))
+* autobump bio/deeptools/alignmentsieve ([#1790](https://www.github.com/fgvieira/snakemake-wrappers/issues/1790)) ([cfa4cf7](https://www.github.com/fgvieira/snakemake-wrappers/commit/cfa4cf7ca443a0d24858c804a55e563827e550b3))
+* autobump bio/deeptools/computematrix ([#1784](https://www.github.com/fgvieira/snakemake-wrappers/issues/1784)) ([ccb2958](https://www.github.com/fgvieira/snakemake-wrappers/commit/ccb2958e27d0ce3d5db13bbcf17581b3a6ccc0ae))
+* autobump bio/deseq2/wald ([#1804](https://www.github.com/fgvieira/snakemake-wrappers/issues/1804)) ([fbc6345](https://www.github.com/fgvieira/snakemake-wrappers/commit/fbc6345cdaee3c1452aba52dfa007603b90a5d4f))
+* autobump bio/gatk3/baserecalibrator ([#1792](https://www.github.com/fgvieira/snakemake-wrappers/issues/1792)) ([7b1b2c3](https://www.github.com/fgvieira/snakemake-wrappers/commit/7b1b2c3c7eb05867b5cc770a28f65323b2cc18c4))
+* autobump bio/gdc-api/bam-slicing ([#1806](https://www.github.com/fgvieira/snakemake-wrappers/issues/1806)) ([f723338](https://www.github.com/fgvieira/snakemake-wrappers/commit/f72333859b9f536990c22899ae2a720010a91d5d))
+* autobump bio/igv-reports ([#1788](https://www.github.com/fgvieira/snakemake-wrappers/issues/1788)) ([3ecdb17](https://www.github.com/fgvieira/snakemake-wrappers/commit/3ecdb179679859e5ad8561f93c7476ef9430525c))
+* autobump bio/meryl/count ([#1787](https://www.github.com/fgvieira/snakemake-wrappers/issues/1787)) ([486d99b](https://www.github.com/fgvieira/snakemake-wrappers/commit/486d99ba318e6a7b806077003f97f7b693e98a1d))
+* autobump bio/pbmm2/align ([#1783](https://www.github.com/fgvieira/snakemake-wrappers/issues/1783)) ([756a11d](https://www.github.com/fgvieira/snakemake-wrappers/commit/756a11d317cdd332771925ae910c25eef39ea83e))
+* autobump bio/pbmm2/index ([#1801](https://www.github.com/fgvieira/snakemake-wrappers/issues/1801)) ([a91b214](https://www.github.com/fgvieira/snakemake-wrappers/commit/a91b214b643452561bd3de81a6283c100471a427))
+* autobump bio/picard/collectalignmentsummarymetrics ([#1803](https://www.github.com/fgvieira/snakemake-wrappers/issues/1803)) ([3d727b4](https://www.github.com/fgvieira/snakemake-wrappers/commit/3d727b4559cb8c2eb2a98d714b6a5f54d336b9c4))
+* autobump bio/picard/collectmultiplemetrics ([#1791](https://www.github.com/fgvieira/snakemake-wrappers/issues/1791)) ([a289b27](https://www.github.com/fgvieira/snakemake-wrappers/commit/a289b276540d2da42920db86f9117090c8f39ddc))
+* autobump bio/samtools/idxstats ([#1780](https://www.github.com/fgvieira/snakemake-wrappers/issues/1780)) ([01985b9](https://www.github.com/fgvieira/snakemake-wrappers/commit/01985b97b60be1ce4ca35958a5c4851ef98602dc))
+* autobump bio/seqkit ([#1805](https://www.github.com/fgvieira/snakemake-wrappers/issues/1805)) ([923c7ba](https://www.github.com/fgvieira/snakemake-wrappers/commit/923c7bab7eb6dc4c8fb5825776c73c543e7a7207))
+* autobump bio/sra-tools/fasterq-dump ([#1793](https://www.github.com/fgvieira/snakemake-wrappers/issues/1793)) ([873937e](https://www.github.com/fgvieira/snakemake-wrappers/commit/873937e25308ede4a55fbf13698cb5e410aa8ad5))
+* autobump bio/vg/construct ([#1779](https://www.github.com/fgvieira/snakemake-wrappers/issues/1779)) ([0a9bf2d](https://www.github.com/fgvieira/snakemake-wrappers/commit/0a9bf2da9b053473069ac119db2a574790aa1112))
+* autobump bio/vg/ids ([#1781](https://www.github.com/fgvieira/snakemake-wrappers/issues/1781)) ([eb1e70e](https://www.github.com/fgvieira/snakemake-wrappers/commit/eb1e70e7a0ce12c31be75d3ab682c9458164b9cd))
+* autobump bio/vg/sim ([#1785](https://www.github.com/fgvieira/snakemake-wrappers/issues/1785)) ([951ca2f](https://www.github.com/fgvieira/snakemake-wrappers/commit/951ca2f81f2a03044af582fcc072f4dd7363c4a4))
+
 ## [2.6.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v2.5.0...v2.6.0) (2023-08-25)
 
 
