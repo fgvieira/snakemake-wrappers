@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v2.13.0...v3.0.0) (2023-11-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace all bbtool wrappers with one bbtool wrapper for all subcommands (#1322)
+
+### Features
+
+* replace all bbtool wrappers with one bbtool wrapper for all subcommands ([#1322](https://www.github.com/fgvieira/snakemake-wrappers/issues/1322)) ([6eb3c22](https://www.github.com/fgvieira/snakemake-wrappers/commit/6eb3c227686c545b937d7cc5ef39b0b435f3e2b0))
+
 ## [2.13.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v2.12.0...v2.13.0) (2023-11-13)
 
 
