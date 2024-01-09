@@ -1,5 +1,28 @@
 # Changelog
 
+### [3.3.4](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.3.3...v3.3.4) (2024-01-09)
+
+
+### Bug Fixes
+
+* test case for reference-ensembl-sequence wrapper ([#2522](https://www.github.com/fgvieira/snakemake-wrappers/issues/2522)) ([46bac2e](https://www.github.com/fgvieira/snakemake-wrappers/commit/46bac2e06d25da08e7dd5ae0a091e797c96089a7))
+
+
+### Performance Improvements
+
+* autobump bio/bustools/count ([#2524](https://www.github.com/fgvieira/snakemake-wrappers/issues/2524)) ([456e00d](https://www.github.com/fgvieira/snakemake-wrappers/commit/456e00d3550b3ddacad8041acb1108f5eece4343))
+* autobump bio/bustools/sort ([#2526](https://www.github.com/fgvieira/snakemake-wrappers/issues/2526)) ([0dc2402](https://www.github.com/fgvieira/snakemake-wrappers/commit/0dc24023144fb444d1098ac2ddf90843d4d566c2))
+* autobump bio/bustools/text ([#2525](https://www.github.com/fgvieira/snakemake-wrappers/issues/2525)) ([c6a41f1](https://www.github.com/fgvieira/snakemake-wrappers/commit/c6a41f1093373dc791883cba7949f416c7417456))
+* autobump bio/dada2/add-species ([#2528](https://www.github.com/fgvieira/snakemake-wrappers/issues/2528)) ([436567a](https://www.github.com/fgvieira/snakemake-wrappers/commit/436567a3db7e884a7333c78c82317f6328a80e0d))
+* autobump bio/dada2/assign-species ([#2527](https://www.github.com/fgvieira/snakemake-wrappers/issues/2527)) ([7786476](https://www.github.com/fgvieira/snakemake-wrappers/commit/7786476707198b315b28e1687c9e9e7ff37d32d3))
+* autobump bio/dada2/collapse-nomismatch ([#2531](https://www.github.com/fgvieira/snakemake-wrappers/issues/2531)) ([46a9bf0](https://www.github.com/fgvieira/snakemake-wrappers/commit/46a9bf0a5ae9bcbbbcad1dee403f873e9fb9e889))
+* autobump bio/dada2/filter-trim ([#2532](https://www.github.com/fgvieira/snakemake-wrappers/issues/2532)) ([3b18635](https://www.github.com/fgvieira/snakemake-wrappers/commit/3b186354c11e5fa7f0ceb24d84884c20760c1a97))
+* autobump bio/dada2/quality-profile ([#2530](https://www.github.com/fgvieira/snakemake-wrappers/issues/2530)) ([40a65c7](https://www.github.com/fgvieira/snakemake-wrappers/commit/40a65c7cb3ffddefa7bd6c48593d9d9ef617ddad))
+* autobump bio/dada2/sample-inference ([#2529](https://www.github.com/fgvieira/snakemake-wrappers/issues/2529)) ([b35731c](https://www.github.com/fgvieira/snakemake-wrappers/commit/b35731c3ca9cf91e352274d041ccf701f93efa6e))
+* autobump bio/fgbio/annotatebamwithumis ([#2533](https://www.github.com/fgvieira/snakemake-wrappers/issues/2533)) ([187aa85](https://www.github.com/fgvieira/snakemake-wrappers/commit/187aa8537f93f018ec050fb992719db71a5fff9a))
+* autobump bio/gatk3/indelrealigner ([#2534](https://www.github.com/fgvieira/snakemake-wrappers/issues/2534)) ([9bd6dba](https://www.github.com/fgvieira/snakemake-wrappers/commit/9bd6dbad38356eb035d0c33aaa4dee6e01e900eb))
+* autobump bio/rasusa ([#2535](https://www.github.com/fgvieira/snakemake-wrappers/issues/2535)) ([caa3b3f](https://www.github.com/fgvieira/snakemake-wrappers/commit/caa3b3ffaab9aa95cf9d7818c882e789255b9e9b))
+
 ### [3.3.3](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.3.2...v3.3.3) (2023-12-29)
 
 
