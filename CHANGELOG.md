@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.5.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.4.1...v3.5.0) (2024-03-08)
+
+
+### Features
+
+* Genepred to bed ([#2726](https://www.github.com/fgvieira/snakemake-wrappers/issues/2726)) ([3998574](https://www.github.com/fgvieira/snakemake-wrappers/commit/3998574d4c3cc02706ef4056dbb387835755e0f6))
+* MultiQC automatically detects configuration from input file(s) ([#2722](https://www.github.com/fgvieira/snakemake-wrappers/issues/2722)) ([f61238d](https://www.github.com/fgvieira/snakemake-wrappers/commit/f61238d350ba737aae0b2948857d7f50d5f124d7))
+* Rseqc infer experiment ([#2730](https://www.github.com/fgvieira/snakemake-wrappers/issues/2730)) ([c597f2b](https://www.github.com/fgvieira/snakemake-wrappers/commit/c597f2b50170ef0f3843624b38beb27f644022cc))
+* Rseqc read duplication ([#2731](https://www.github.com/fgvieira/snakemake-wrappers/issues/2731)) ([2d5f9e7](https://www.github.com/fgvieira/snakemake-wrappers/commit/2d5f9e79b6620cd2bc4627c643b0db846e4d576d))
+* Rseqc read gc ([#2729](https://www.github.com/fgvieira/snakemake-wrappers/issues/2729)) ([739d809](https://www.github.com/fgvieira/snakemake-wrappers/commit/739d809ad6d85a17bc5028a549d1e9e1b5262568))
+
+
+### Performance Improvements
+
+* autobump bio/gseapy/gsea ([#2727](https://www.github.com/fgvieira/snakemake-wrappers/issues/2727)) ([400db30](https://www.github.com/fgvieira/snakemake-wrappers/commit/400db30891d291605d7bb9e039937a62aea23107))
+* autobump bio/sra-tools/fasterq-dump ([#2728](https://www.github.com/fgvieira/snakemake-wrappers/issues/2728)) ([92c9521](https://www.github.com/fgvieira/snakemake-wrappers/commit/92c952124f885624e7725b672f8926cfb7386f76))
+* Update Datavzrd to 2.36.4 ([#2720](https://www.github.com/fgvieira/snakemake-wrappers/issues/2720)) ([7611d30](https://www.github.com/fgvieira/snakemake-wrappers/commit/7611d30950b85360cb91ff2b58895ae788e05c68))
+
 ### [3.4.1](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.4.0...v3.4.1) (2024-03-01)
 
 
