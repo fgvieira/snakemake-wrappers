@@ -1,5 +1,54 @@
 # Changelog
 
+## [3.11.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.10.2...v3.11.0) (2024-05-29)
+
+
+### Features
+
+* add samtools markdup wrapper ([#2926](https://www.github.com/fgvieira/snakemake-wrappers/issues/2926)) ([3c86bae](https://www.github.com/fgvieira/snakemake-wrappers/commit/3c86baef4586b596c6c3375336828257e8bb815f))
+* Add support for regions file and arbitrary FAI/GZI paths ([#2936](https://www.github.com/fgvieira/snakemake-wrappers/issues/2936)) ([445b35f](https://www.github.com/fgvieira/snakemake-wrappers/commit/445b35f314f035d8248ca84cb16b273b0e65847c))
+* add wrapper to samtools collate ([#2929](https://www.github.com/fgvieira/snakemake-wrappers/issues/2929)) ([0c7ae27](https://www.github.com/fgvieira/snakemake-wrappers/commit/0c7ae27622e45167b9cc1aaf1be238b0d25429b9))
+* All ngsderive subcommands ([#2732](https://www.github.com/fgvieira/snakemake-wrappers/issues/2732)) ([847ab1d](https://www.github.com/fgvieira/snakemake-wrappers/commit/847ab1d918c09908bcdb40fa3413b6dbc88d4803))
+* auto infer run mode ([#2937](https://www.github.com/fgvieira/snakemake-wrappers/issues/2937)) ([08bd3cd](https://www.github.com/fgvieira/snakemake-wrappers/commit/08bd3cd79243c4c0636f88d229667e58595611bd))
+* Goleft indexcov ([#2734](https://www.github.com/fgvieira/snakemake-wrappers/issues/2734)) ([ebef6f8](https://www.github.com/fgvieira/snakemake-wrappers/commit/ebef6f8259e89d9a06b2264a5d0a34da23d2e84e))
+
+
+### Bug Fixes
+
+* bamcoverage without effective genome size ([#2941](https://www.github.com/fgvieira/snakemake-wrappers/issues/2941)) ([b6ad55f](https://www.github.com/fgvieira/snakemake-wrappers/commit/b6ad55f4d2c702ecc904d6b40b4b35b2463c895a))
+* issue [#366](https://www.github.com/fgvieira/snakemake-wrappers/issues/366) and [#2649](https://www.github.com/fgvieira/snakemake-wrappers/issues/2649) ([#2928](https://www.github.com/fgvieira/snakemake-wrappers/issues/2928)) ([e10ab57](https://www.github.com/fgvieira/snakemake-wrappers/commit/e10ab571a63b36ce1295e50b6f6b7e4742e0beae))
+* remove NA string replacement, fixed upstream ([#2940](https://www.github.com/fgvieira/snakemake-wrappers/issues/2940)) ([8f4d223](https://www.github.com/fgvieira/snakemake-wrappers/commit/8f4d223ec6c1e1e2715708d0532399ede4ed2727))
+
+
+### Performance Improvements
+
+* autobump bio/bismark/bam2nuc ([#2943](https://www.github.com/fgvieira/snakemake-wrappers/issues/2943)) ([9228479](https://www.github.com/fgvieira/snakemake-wrappers/commit/9228479896c2410ae6a58849bf59e5f01bc5e712))
+* autobump bio/bismark/bismark ([#2948](https://www.github.com/fgvieira/snakemake-wrappers/issues/2948)) ([d9abb20](https://www.github.com/fgvieira/snakemake-wrappers/commit/d9abb20e0e002d9ec16507d86211b0555a2546ba))
+* autobump bio/bismark/bismark_genome_preparation ([#2945](https://www.github.com/fgvieira/snakemake-wrappers/issues/2945)) ([899ae0d](https://www.github.com/fgvieira/snakemake-wrappers/commit/899ae0d96d04fa56a7ba5989d9dea18be0d3ebc6))
+* autobump bio/bismark/bismark_methylation_extractor ([#2944](https://www.github.com/fgvieira/snakemake-wrappers/issues/2944)) ([1b232d2](https://www.github.com/fgvieira/snakemake-wrappers/commit/1b232d24816a40f75568bec224eff4e164b3f953))
+* autobump bio/bismark/bismark2bedGraph ([#2947](https://www.github.com/fgvieira/snakemake-wrappers/issues/2947)) ([ab29098](https://www.github.com/fgvieira/snakemake-wrappers/commit/ab29098757c3eef17884f198234ec456e19414f9))
+* autobump bio/bismark/bismark2report ([#2951](https://www.github.com/fgvieira/snakemake-wrappers/issues/2951)) ([13dd155](https://www.github.com/fgvieira/snakemake-wrappers/commit/13dd155a20025b8aaaa80ce3747e6822562bb6b1))
+* autobump bio/bismark/bismark2summary ([#2946](https://www.github.com/fgvieira/snakemake-wrappers/issues/2946)) ([bfb3d30](https://www.github.com/fgvieira/snakemake-wrappers/commit/bfb3d305daa519faee4ad4ea7dbd313941f4c128))
+* autobump bio/bismark/deduplicate_bismark ([#2950](https://www.github.com/fgvieira/snakemake-wrappers/issues/2950)) ([bcf3c06](https://www.github.com/fgvieira/snakemake-wrappers/commit/bcf3c06887443dae9749254f0e8d34e30f880b7e))
+* autobump bio/bowtie2/align ([#2949](https://www.github.com/fgvieira/snakemake-wrappers/issues/2949)) ([6b0593f](https://www.github.com/fgvieira/snakemake-wrappers/commit/6b0593facfcae0b9c92cb1f31423426752c0230d))
+* autobump bio/bowtie2/build ([#2942](https://www.github.com/fgvieira/snakemake-wrappers/issues/2942)) ([5b3ca20](https://www.github.com/fgvieira/snakemake-wrappers/commit/5b3ca20635bd0e427a548e68cd8a40fdb0047f10))
+* autobump bio/fastq_screen ([#2952](https://www.github.com/fgvieira/snakemake-wrappers/issues/2952)) ([e45fcac](https://www.github.com/fgvieira/snakemake-wrappers/commit/e45fcac221ef45f345a516bff905a53c864e7355))
+* autobump bio/gatk/applybqsr ([#2938](https://www.github.com/fgvieira/snakemake-wrappers/issues/2938)) ([498c67f](https://www.github.com/fgvieira/snakemake-wrappers/commit/498c67fb12691b0021a7b234dfc279957b46708c))
+* autobump bio/gatk3/realignertargetcreator ([#2931](https://www.github.com/fgvieira/snakemake-wrappers/issues/2931)) ([2d2835c](https://www.github.com/fgvieira/snakemake-wrappers/commit/2d2835c51f974f7f45420f832b8084520d2d3ec0))
+* autobump bio/gdc-api/bam-slicing ([#2954](https://www.github.com/fgvieira/snakemake-wrappers/issues/2954)) ([32d25c1](https://www.github.com/fgvieira/snakemake-wrappers/commit/32d25c1560b4c581694c49dc6d3a596e5ca581ab))
+* autobump bio/goleft/indexcov ([#2930](https://www.github.com/fgvieira/snakemake-wrappers/issues/2930)) ([5ccbdb0](https://www.github.com/fgvieira/snakemake-wrappers/commit/5ccbdb078a835ad0c2fd3e9e63677103fe216eeb))
+* autobump bio/gseapy/gsea ([#2953](https://www.github.com/fgvieira/snakemake-wrappers/issues/2953)) ([dda3d16](https://www.github.com/fgvieira/snakemake-wrappers/commit/dda3d16c9b49145bd58d287db1021c41d5a24710))
+* autobump bio/hifiasm ([#2932](https://www.github.com/fgvieira/snakemake-wrappers/issues/2932)) ([3722de7](https://www.github.com/fgvieira/snakemake-wrappers/commit/3722de7000d0b74a3c56bfdb27aad6cf318562ee))
+* autobump bio/multiqc ([#2955](https://www.github.com/fgvieira/snakemake-wrappers/issues/2955)) ([91ad107](https://www.github.com/fgvieira/snakemake-wrappers/commit/91ad1079fa03b07f8ebb9ebf21fe92d21c8a3c13))
+* autobump bio/ptrimmer ([#2933](https://www.github.com/fgvieira/snakemake-wrappers/issues/2933)) ([cd37e0b](https://www.github.com/fgvieira/snakemake-wrappers/commit/cd37e0bb19e341ad40560828f3c052ef69529088))
+* autobump bio/rbt/csvreport ([#2956](https://www.github.com/fgvieira/snakemake-wrappers/issues/2956)) ([b2a469d](https://www.github.com/fgvieira/snakemake-wrappers/commit/b2a469dc907c8f3761399affd29ca53f012cc3ee))
+* autobump bio/unicycler ([#2957](https://www.github.com/fgvieira/snakemake-wrappers/issues/2957)) ([185ce7e](https://www.github.com/fgvieira/snakemake-wrappers/commit/185ce7e4bd6adbdf840effa665f62e358865c8b8))
+* autobump bio/vep/annotate ([#2958](https://www.github.com/fgvieira/snakemake-wrappers/issues/2958)) ([728658d](https://www.github.com/fgvieira/snakemake-wrappers/commit/728658d5fae40ea784f7b8d3c567c4f7240ef7c7))
+* autobump bio/vep/cache ([#2959](https://www.github.com/fgvieira/snakemake-wrappers/issues/2959)) ([f4e5b66](https://www.github.com/fgvieira/snakemake-wrappers/commit/f4e5b66f8765d09d51d4a640d2d775d781c3018f))
+* autobump bio/whatshap/haplotag ([#2934](https://www.github.com/fgvieira/snakemake-wrappers/issues/2934)) ([f0b638a](https://www.github.com/fgvieira/snakemake-wrappers/commit/f0b638a55280c0727ccef5aab24e03b3d565f290))
+* Update Datavzrd to 2.36.12 ([#2924](https://www.github.com/fgvieira/snakemake-wrappers/issues/2924)) ([beb9d22](https://www.github.com/fgvieira/snakemake-wrappers/commit/beb9d2231c5d59ba74f23f56bbfc5e004aa72331))
+* Use samtools collate in fastq separate wrapper ([#2960](https://www.github.com/fgvieira/snakemake-wrappers/issues/2960)) ([9c8cf81](https://www.github.com/fgvieira/snakemake-wrappers/commit/9c8cf81c1894fc019ffbf0f906eb88e0960c3e7d))
+
 ### [3.10.2](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.10.1...v3.10.2) (2024-05-03)
 
 
