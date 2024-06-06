@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.12.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.11.0...v3.12.0) (2024-06-06)
+
+
+### Features
+
+* Support lists in param.region, and fix typo ([#2978](https://www.github.com/fgvieira/snakemake-wrappers/issues/2978)) ([1e9e511](https://www.github.com/fgvieira/snakemake-wrappers/commit/1e9e511fdf14174c52ae7555fb78e416986503be))
+
 ## [3.11.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.10.2...v3.11.0) (2024-05-31)
 
 
