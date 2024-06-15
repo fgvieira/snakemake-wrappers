@@ -1,5 +1,18 @@
 # Changelog
 
+### [3.12.2](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.12.1...v3.12.2) (2024-06-15)
+
+
+### Performance Improvements
+
+* autobump bio/last/lastal ([#2992](https://www.github.com/fgvieira/snakemake-wrappers/issues/2992)) ([3514346](https://www.github.com/fgvieira/snakemake-wrappers/commit/3514346e51042228b931db46dcd7dc37ed70741a))
+* autobump bio/last/lastdb ([#2993](https://www.github.com/fgvieira/snakemake-wrappers/issues/2993)) ([7841808](https://www.github.com/fgvieira/snakemake-wrappers/commit/78418080fa36b477601a53b674a6c2699763089f))
+* autobump bio/mapdamage2 ([#2995](https://www.github.com/fgvieira/snakemake-wrappers/issues/2995)) ([fea552c](https://www.github.com/fgvieira/snakemake-wrappers/commit/fea552c8811f025f4278bd596c346244c93fb3b9))
+* autobump bio/ngsderive ([#2996](https://www.github.com/fgvieira/snakemake-wrappers/issues/2996)) ([e5bfa94](https://www.github.com/fgvieira/snakemake-wrappers/commit/e5bfa9465f0e3951799f5d48de2cb132068e3f7d))
+* autobump bio/pbmm2/align ([#2998](https://www.github.com/fgvieira/snakemake-wrappers/issues/2998)) ([b50e222](https://www.github.com/fgvieira/snakemake-wrappers/commit/b50e222e7b4936a05aff7e943e439c36eb3ebc38))
+* autobump bio/pbmm2/index ([#2997](https://www.github.com/fgvieira/snakemake-wrappers/issues/2997)) ([fb96fe5](https://www.github.com/fgvieira/snakemake-wrappers/commit/fb96fe582740a763aa1a3b8d576011d62ad1b7ae))
+* autobump bio/sourmash/compute ([#2999](https://www.github.com/fgvieira/snakemake-wrappers/issues/2999)) ([12d87ec](https://www.github.com/fgvieira/snakemake-wrappers/commit/12d87ec53531491f68ed62b7ce2208cff63843ff))
+
 ### [3.12.1](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.12.0...v3.12.1) (2024-06-12)
 
 
