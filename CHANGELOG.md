@@ -1,5 +1,13 @@
 # Changelog
 
+### [3.13.7](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.13.6...v3.13.7) (2024-07-09)
+
+
+### Performance Improvements
+
+* autobump bio/manta ([#2114](https://www.github.com/fgvieira/snakemake-wrappers/issues/2114)) ([bd68956](https://www.github.com/fgvieira/snakemake-wrappers/commit/bd6895677a45680f1b28721bfe1583ec6ba77c2a))
+* autobump bio/nonpareil/infer ([#3035](https://www.github.com/fgvieira/snakemake-wrappers/issues/3035)) ([ebd6fa3](https://www.github.com/fgvieira/snakemake-wrappers/commit/ebd6fa3dc503d48933b0c15df20aea24a0df5871))
+
 ### [3.13.6](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.13.5...v3.13.6) (2024-07-08)
 
 
