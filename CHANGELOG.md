@@ -1,5 +1,19 @@
 # Changelog
 
+### [3.14.1](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.14.0...v3.14.1) (2024-08-08)
+
+
+### Bug Fixes
+
+* download already indexed vep cache tarball ([#3102](https://www.github.com/fgvieira/snakemake-wrappers/issues/3102)) ([13c6ef7](https://www.github.com/fgvieira/snakemake-wrappers/commit/13c6ef74db8f6c4608c87f6209bab69b3e9ed16a))
+
+
+### Performance Improvements
+
+* autobump bio/gdc-api/bam-slicing ([#3096](https://www.github.com/fgvieira/snakemake-wrappers/issues/3096)) ([248b611](https://www.github.com/fgvieira/snakemake-wrappers/commit/248b611f33ce879ad40eef4b78ad2d84cda43948))
+* autobump bio/sourmash/compute ([#3098](https://www.github.com/fgvieira/snakemake-wrappers/issues/3098)) ([5796bc6](https://www.github.com/fgvieira/snakemake-wrappers/commit/5796bc6fe0908c4922bb8bfc93183df72afa04b2))
+* autobump bio/unicycler ([#3099](https://www.github.com/fgvieira/snakemake-wrappers/issues/3099)) ([a09832a](https://www.github.com/fgvieira/snakemake-wrappers/commit/a09832ae1ada3771d130087bc6dec5656b635643))
+
 ## [3.14.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.13.8...v3.14.0) (2024-07-31)
 
 
