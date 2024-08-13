@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://www.github.com/fgvieira/snakemake-wrappers/compare/v3.14.2...v4.0.0) (2024-08-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch to nonpareil utils script for plotting (#3100)
+
+### Features
+
+* switch to nonpareil utils script for plotting ([#3100](https://www.github.com/fgvieira/snakemake-wrappers/issues/3100)) ([d8ee6cb](https://www.github.com/fgvieira/snakemake-wrappers/commit/d8ee6cb1d15537cd8a42c38b9f2116cc77fa2880))
+
 ### [3.14.2](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.14.1...v3.14.2) (2024-08-13)
 
 
