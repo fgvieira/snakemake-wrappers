@@ -1,5 +1,12 @@
 # Changelog
 
+### [4.0.1](https://www.github.com/fgvieira/snakemake-wrappers/compare/v4.0.0...v4.0.1) (2024-08-15)
+
+
+### Bug Fixes
+
+* Correctly handle non str index list for bwa-mem2/mem ([#3101](https://www.github.com/fgvieira/snakemake-wrappers/issues/3101)) ([6f46508](https://www.github.com/fgvieira/snakemake-wrappers/commit/6f46508aa99663930e70c82114205929aee2dfcb))
+
 ## [4.0.0](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.14.2...v4.0.0) (2024-08-14)
 
 
