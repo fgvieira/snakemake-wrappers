@@ -1,5 +1,12 @@
 # Changelog
 
+### [4.7.6](https://www.github.com/fgvieira/snakemake-wrappers/compare/v4.7.5...v4.7.6) (2024-10-24)
+
+
+### Performance Improvements
+
+* autobump bio/kallisto/quant ([#3090](https://www.github.com/fgvieira/snakemake-wrappers/issues/3090)) ([a9b8030](https://www.github.com/fgvieira/snakemake-wrappers/commit/a9b80301d09711893d74fdba1d0d17b651ced80a))
+
 ### [4.7.5](https://www.github.com/snakemake/snakemake-wrappers/compare/v4.7.4...v4.7.5) (2024-10-23)
 
 
