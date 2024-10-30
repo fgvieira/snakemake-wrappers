@@ -1,5 +1,12 @@
 # Changelog
 
+### [4.7.7](https://www.github.com/fgvieira/snakemake-wrappers/compare/v4.7.6...v4.7.7) (2024-10-30)
+
+
+### Bug Fixes
+
+* gffread issue with reading gff files, writing fasta files ([#3367](https://www.github.com/fgvieira/snakemake-wrappers/issues/3367)) ([e72fca0](https://www.github.com/fgvieira/snakemake-wrappers/commit/e72fca0ce7e1849f6887a3dea5ade6ea0b22c45d))
+
 ### [4.7.6](https://www.github.com/snakemake/snakemake-wrappers/compare/v4.7.5...v4.7.6) (2024-10-25)
 
 
