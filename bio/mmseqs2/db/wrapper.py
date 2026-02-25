@@ -16,10 +16,10 @@ if snakemake.input.get("tax_map"):
 taxdump = snakemake.input.get("taxdump")
 
 
-# TODO: arbitrary output file names
-out = snakemake.output
+# Output
+out = snakemake.output.get("db")
 if isinstance(out, list):
-    out = os.path.commonprefix(out).rstrip("_")
+    out = os.path.commonprefix(out)
 
 
 with tempfile.TemporaryDirectory() as tmpdir:
