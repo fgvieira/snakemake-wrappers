@@ -25,12 +25,15 @@ if isinstance(out, list):
 with tempfile.TemporaryDirectory() as tmpdir:
     # Modules with threads
     if snakemake.params.module in ["databases"]:
+        input = ""
         extra = f"--threads {snakemake.threads} {extra}"
     # Modules with no temp folder
     if snakemake.params.module in ["createdb"]:
+        input = snakemake.input.fas
         tmpdir = ""
     # Modules with no out folder
     if snakemake.params.module in ["createtaxdb"]:
+        input = snakemake.input.db
         out = ""
     # Auto-uncompress taxdump file
     if taxdump:
@@ -43,6 +46,4 @@ with tempfile.TemporaryDirectory() as tmpdir:
             tar.close()
         extra += f" --ncbi-tax-dump {taxdump}"
 
-    shell(
-        "mmseqs {snakemake.params.module} {snakemake.input[0]} {out} {tmpdir} {extra} {log}"
-    )
+    shell("mmseqs {snakemake.params.module} {input} {out} {tmpdir} {extra} {log}")
