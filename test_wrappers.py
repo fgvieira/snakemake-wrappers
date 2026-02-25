@@ -190,6 +190,7 @@ def test_mmseqs2(run):
             "-F",
             "out/databases/a",
             "out/createdb/a",
+            "out/createtaxdb/a.done",
         ],
         compare_results_with_expected={
             "out/databases/a.dbtype": "expected/databases/a.dbtype",

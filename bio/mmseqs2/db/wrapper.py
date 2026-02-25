@@ -10,9 +10,11 @@ extra = snakemake.params.get("extra", "")
 log = snakemake.log_fmt_shell(stdout=True, stderr=True)
 
 
-input = snakemake.input
-if isinstance(input, list):
-    input = os.path.commonprefix(input)
+# Input
+if snakemake.input.get("tax_map"):
+    extra += f" --tax-mapping-file {snakemake.input.tax_map}"
+taxdump = snakemake.input.get("taxdump")
+
 
 # TODO: arbitrary output file names
 out = snakemake.output
@@ -27,5 +29,17 @@ with tempfile.TemporaryDirectory() as tmpdir:
     # Modules with no temp folder
     if snakemake.params.module in ["createdb"]:
         tmpdir = ""
+    # Modules with no out folder
+    if snakemake.params.module in ["createtaxdb"]:
+        out = ""
+    # Auto-uncompress taxdump file
+    if taxdump:
+        if taxdump.endswith(".tar.gz"):
+            import tarfile
+            tar = tarfile.open(taxdump, "r:gz")
+            taxdump = tmpdir / "taxdump"
+            tar.extractall(taxdump)
+            tar.close()
+        extra += f" --ncbi-tax-dump {taxdump}"
 
-    shell("mmseqs {snakemake.params.module} {input} {out} {tmpdir} {extra} {log}")
+    shell("mmseqs {snakemake.params.module} {snakemake.input[0]} {out} {tmpdir} {extra} {log}")
