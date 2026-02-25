@@ -66,11 +66,11 @@ with TemporaryDirectory() as tmpdirname:
 
     # mapping of file suffixes to snakemake.output attributes
     file_map = {
-        "antitargetcoverage.cnn": "antitarget_coverage",
-        "bintest.cns": "bins",
+        ".antitargetcoverage.cnn": "antitarget_coverage",
+        ".bintest.cns": "bins",
         ".cnr": "regions",
-        "call.cns": "segments_called",
-        "targetcoverage.cnn": "target_coverage",
+        ".call.cns": "segments_called",
+        ".targetcoverage.cnn": "target_coverage",
         ".cns": "segments",
         "reference.cnn": "reference",
     }
