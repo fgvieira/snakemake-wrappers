@@ -9,5 +9,5 @@ input:
 output:
   - output: DB files
 params:
-  - module: workflow to use
+  - module: workflow to use; it can either be ``database`` (to `download existing databases <https://github.com/soedinglab/mmseqs2/wiki#downloading-databases>`_), or ``createdb``/``createtaxdb`` (to `create a new database <https://github.com/soedinglab/mmseqs2/wiki#creating-a-seqtaxdb>`_)
   - extra: additional program arguments
