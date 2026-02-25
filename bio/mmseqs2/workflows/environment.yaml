@@ -3,5 +3,5 @@ channels:
   - bioconda
   - nodefaults
 dependencies:
-  - mmseqs2 =17.b804f
+  - mmseqs2 =18.8cc5c
   - snakemake-wrapper-utils =0.8.0
