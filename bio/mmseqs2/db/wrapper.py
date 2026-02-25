@@ -24,17 +24,22 @@ if isinstance(out, list):
 
 with tempfile.TemporaryDirectory() as tmpdir:
     # Modules with threads
-    if snakemake.params.module in ["databases"]:
+    if snakemake.params.module.startswith("databases "):
         input = ""
-        extra = f"--threads {snakemake.threads} {extra}"
+        extra += f" --threads {snakemake.threads}"
     # Modules with no temp folder
-    if snakemake.params.module in ["createdb"]:
+    elif snakemake.params.module == "createdb":
         input = snakemake.input.fas
         tmpdir = ""
     # Modules with no out folder
-    if snakemake.params.module in ["createtaxdb"]:
+    elif snakemake.params.module == "createtaxdb":
         input = snakemake.input.db
         out = ""
+    else:
+        raise ValueError(
+            f"The module specified under 'params' is invalid: '{snakemake.params.module}'."
+        )
+
     # Auto-uncompress taxdump file
     if taxdump:
         if taxdump.endswith(".tar.gz"):
