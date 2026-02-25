@@ -36,10 +36,13 @@ with tempfile.TemporaryDirectory() as tmpdir:
     if taxdump:
         if taxdump.endswith(".tar.gz"):
             import tarfile
+
             tar = tarfile.open(taxdump, "r:gz")
             taxdump = tmpdir / "taxdump"
             tar.extractall(taxdump)
             tar.close()
         extra += f" --ncbi-tax-dump {taxdump}"
 
-    shell("mmseqs {snakemake.params.module} {snakemake.input[0]} {out} {tmpdir} {extra} {log}")
+    shell(
+        "mmseqs {snakemake.params.module} {snakemake.input[0]} {out} {tmpdir} {extra} {log}"
+    )

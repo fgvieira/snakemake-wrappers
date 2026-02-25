@@ -53,7 +53,7 @@ rule mmseqs2_createtaxdb:
     input:
         db="out/createdb/{sample}/",
         tax_dump=storage.ftp("ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz"),
-        tax_map="seqs/{sample}.map"
+        tax_map="seqs/{sample}.map",
     output:
         # Touch empty file since createtaxdb edits DB in place
         touch("out/createtaxdb/{sample}.done"),
