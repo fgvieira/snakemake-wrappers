@@ -12,6 +12,7 @@ extra = snakemake.params.get("extra", "")
 log = snakemake.log_fmt_shell(stdout=True, stderr=True)
 
 
+# Input
 target = snakemake.input.get("target", "")
 if isinstance(target, list):
     target = os.path.commonprefix(snakemake.input.target)
@@ -20,7 +21,7 @@ if isinstance(target, list):
 with tempfile.TemporaryDirectory() as tmpout:
     out = snakemake.output
     move_cmds = ""
-    # Define output folder
+    # Output
     if snakemake.params.module in ["easy_search", "easy_rbh"]:
         format_mode = get_format(out)
         # (0) BLAST-TAB
@@ -50,6 +51,7 @@ with tempfile.TemporaryDirectory() as tmpout:
         }
         move_cmds = "; ".join(move_files(snakemake, mapping))
 
+    # Run mmseqs2
     with tempfile.TemporaryDirectory() as tmpdir:
         shell(
             "(mmseqs {snakemake.params.module} {snakemake.input.query} {target} {out} {tmpdir} --threads {snakemake.threads} {extra}; {move_cmds}) {log}"
