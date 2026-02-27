@@ -3,7 +3,7 @@ rule mmseqs2_workflow_search:
         query=["seqs/nucl.a.fas.gz", "seqs/nucl.b.fas.gz"],
         target="seqs/nucl.{sample}.fas.gz",
     output:
-        aln="out/search/{sample}.tab",
+        aln="out/search/{sample}.tsv",
     log:
         "logs/search/{sample}.log",
     params:
@@ -18,9 +18,9 @@ rule mmseqs2_workflow_cluster:
     input:
         query=["seqs/nucl.a.fas.gz", "seqs/nucl.b.fas.gz"],
     output:
-        cluster=multiext(
-            "out/cluster/a_b", "_all_seqs.fasta", "_cluster.tsv", "_rep_seq.fasta"
-        ),
+        fas="out/cluster/a_b.seqs.fas",
+        tsv="out/cluster/a_b.cluster.tsv",
+        fas_rep="out/cluster/a_b.rep_seq.fasta",
     log:
         "logs/cluster/a_b.log",
     params:
@@ -35,9 +35,9 @@ rule mmseqs2_workflow_linclust:
     input:
         query=["seqs/nucl.a.fas.gz", "seqs/nucl.b.fas.gz"],
     output:
-        cluster=multiext(
-            "out/linclust/a_b", "_all_seqs.fasta", "_cluster.tsv", "_rep_seq.fasta"
-        ),
+        fas="out/linclust/a_b.seqs.fas",
+        tsv="out/linclust/a_b.cluster.tsv",
+        fas_rep="out/linclust/a_b.rep_seq.fasta",
     log:
         "logs/linclust/a_b.log",
     params:
@@ -63,13 +63,10 @@ rule mmseqs2_workflow_taxonomy:
             "_h.index",
         ),
     output:
-        report=multiext(
-            "out/taxonomy/{sample}",
-            "_lca.tsv",
-            "_report",
-            "_tophit_aln",
-            "_tophit_report",
-        ),
+        lca="out/taxonomy/{sample}.lca.tsv",
+        report="out/taxonomy/{sample}.report",
+        taln="out/taxonomy/{sample}.tophit_aln",
+        treport="out/taxonomy/{sample}.tophit_report",
     log:
         "logs/taxonomy/{sample}.log",
     params:
@@ -85,7 +82,7 @@ rule mmseqs2_workflow_rbh:
         query="seqs/nucl.b.fas.gz",
         target="seqs/nucl.{sample}.fas.gz",
     output:
-        aln="out/rbh/{sample}.tab",
+        aln="out/rbh/{sample}.tsv",
     log:
         "logs/rbh/{sample}.log",
     params:
