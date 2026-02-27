@@ -55,7 +55,8 @@ rule mmseqs2_createtaxdb:
         tax_dump=storage.http("http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz"),
         tax_map="seqs/{sample}.map",
     output:
-        # Touch empty file since createtaxdb edits DB in place
+        # Touch empty file since createtaxdb edits DB in place.
+        # Make sure to include this file as input in rules that need the annotated database.
         touch("out/createtaxdb/{sample}.done"),
     log:
         "logs/createtaxdb/{sample}.log",

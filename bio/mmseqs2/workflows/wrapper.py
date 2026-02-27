@@ -18,7 +18,7 @@ if isinstance(target, list):
 # TODO: arbitrary output file names
 out = snakemake.output
 if isinstance(out, list):
-    out = os.path.commonprefix(out).rstrip("_")
+    out = os.path.commonprefix(out)
 else:
     format_mode = get_format(out)
     # (0) BLAST-TAB
