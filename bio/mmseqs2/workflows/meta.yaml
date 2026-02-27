@@ -10,5 +10,5 @@ input:
 output:
   - output: FAS, cluster or DB file(s)
 params:
-  - module: workflow to use
+  - module: workflow to use; it can either be `easy-search <https://github.com/soedinglab/mmseqs2/wiki#easy-search>`_, `easy-cluster <https://github.com/soedinglab/mmseqs2/wiki#easy-cluster>`_, `easy-linclust <https://github.com/soedinglab/mmseqs2/wiki#easy-linclust>`_, `easy-taxonomy <https://github.com/soedinglab/mmseqs2/wiki#taxonomy-top-hit-report>`_, `easy-rbh <https://github.com/soedinglab/mmseqs2/wiki#reciprocal-best-hit-using-mmseqs-rbh>_`
   - extra: additional program arguments
