@@ -149,6 +149,66 @@ def run(tmp_test_dir):
     return _run
 
 
+def test_mmseqs2(run):
+    run(
+        "bio/mmseqs2/workflows",
+        [
+            "snakemake",
+            "--cores",
+            "2",
+            "--use-conda",
+            "-F",
+            "out/search/a.tsv",
+            "out/cluster/a_b.cluster.tsv",
+            "out/linclust/a_b.cluster.tsv",
+            "out/taxonomy/a.lca.tsv",
+            "out/rbh/a.tsv",
+        ],
+        compare_results_with_expected={
+            "out/search/a.tsv": "expected/search/a.tsv",
+            "out/cluster/a_b.seqs.fas": "expected/cluster/a_b.seqs.fas",
+            "out/cluster/a_b.cluster.tsv": "expected/cluster/a_b.cluster.tsv",
+            "out/cluster/a_b.rep_seq.fasta": "expected/cluster/a_b.rep_seq.fasta",
+            "out/linclust/a_b.seqs.fas": "expected/linclust/a_b.seqs.fas",
+            "out/linclust/a_b.cluster.tsv": "expected/linclust/a_b.cluster.tsv",
+            "out/linclust/a_b.rep_seq.fasta": "expected/linclust/a_b.rep_seq.fasta",
+            "out/taxonomy/a.lca.tsv": "expected/taxonomy/a.lca.tsv",
+            "out/taxonomy/a.report": "expected/taxonomy/a.report",
+            "out/taxonomy/a.tophit_aln": "expected/taxonomy/a.tophit_aln",
+            "out/taxonomy/a.tophit_report": "expected/taxonomy/a.tophit_report",
+            "out/rbh/a.tsv": "expected/rbh/a.tsv",
+        },
+    )
+
+    run(
+        "bio/mmseqs2/db",
+        [
+            "snakemake",
+            "--cores",
+            "2",
+            "--use-conda",
+            "-F",
+            "out/databases/a",
+            "out/createdb/a",
+            "out/createtaxdb/a.done",
+        ],
+        compare_results_with_expected={
+            "out/databases/a.dbtype": "expected/databases/a.dbtype",
+            "out/databases/a_h.dbtype": "expected/databases/a_h.dbtype",
+            "out/databases/a.source": "expected/databases/a.source",
+            "out/databases/a.version": "expected/databases/a.version",
+            "out/createdb/a": "expected/createdb/a",
+            "out/createdb/a.dbtype": "expected/createdb/a.dbtype",
+            "out/createdb/a_h": "expected/createdb/a_h",
+            "out/createdb/a_h.dbtype": "expected/createdb/a_h.dbtype",
+            "out/createdb/a_h.index": "expected/createdb/a_h.index",
+            "out/createdb/a.index": "expected/createdb/a.index",
+            "out/createdb/a.lookup": "expected/createdb/a.lookup",
+            "out/createdb/a.source": "expected/createdb/a.source",
+        },
+    )
+
+
 def test_aria2c(run):
     run(
         "utils/aria2c",
